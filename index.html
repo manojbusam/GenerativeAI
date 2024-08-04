@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Portfolio</title>
+    <style>
+        body {
+            font-family: 'Avenir', sans-serif; /* Your chosen font */
+            margin: 0;
+            padding: 0;
+            background-color: #ff7f50; /* Orange background color */
+            color: #fff; /* White text color */
+        }
+        .outer-container {
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            min-height: 100vh; /* Make sure the container takes at least the full viewport height */
+            overflow: hidden; /* Prevents scroll bars from appearing when content is centered */
+        }
+        
+        .container {
+            display: flex;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #ffffff; /* White background color */
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            overflow: auto;
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+        }
+        .main-content {
+            margin-left: 220px;
+            padding: 20px;
+            overflow-y: auto; /* Enable vertical scroll */
+            height: 100vh; /* Set fixed height to allow scrolling */
+            display: flex;
+            flex-direction: column; /* Stack sections vertically */
+            align-items: center; /* Center sections horizontally */
+        }
+        .menu-link {
+            display: block;
+            margin-bottom: 30px;
+            text-decoration: none;
+            color: #333;
+            text-align: center;
+        }
+        .menu-link:hover {
+            color: #666;
+        }
+        section {
+            text-align: center;
+            scroll-margin-top: 40vh;
+            margin-bottom: 80vh; /* Adds space between sections */
+        }
+        section:last-child {
+            margin-bottom: 40vh; /* No space after the last section */
+        }
+        #home {
+            margin-top: 40vh; /* Position "About Me" section at 40vh from the top */
+        }
+    </style>
+</head>
+<body>
+    <div class="outer-container">
+        <div class="container">
+            <div class="sidebar">
+                <nav>
+                    <ul>
+                        <li><a class="menu-link" href="#home">About Me</a></li>
+                        <li><a class="menu-link" href="#certifications">Certifications</a></li>
+                        <li><a class="menu-link" href="#projects">Projects</a></li>
+                        <li><a class="menu-link" href="#contact">Contact Me</a></li>
+                        <li><a class="menu-link" href="https://www.linkedin.com/in/manoj-busam/" target="_blank" > Linkedin </a> </li> 
+                         <li><a class="menu-link" href="https://medium.com/@manojbusam" target="_blank" > Blog </a> </li> 
+                        
+                    </ul>
+                </nav>
+            </div>
+            <div class="main-content">
+                <section id="home">
+                  <h1>Manoj Busam</h1>
+                  <h3>Machine Learning Engineer</h3>
+                  <p>
+                      Working on integrating LLMs 💎, with Vector Search engines 🔍, Recommender systems 🎯, Knowledge Graphs with Graph DB 🧠 ,Personalization 💼, Fine-tune Machine Learning Models 🤖, & Data Pipelines 🛠️
+                  </p>
+                </section>
+                <section id="certifications">
+                    <h2>Certifications</h2>
+                    <!-- Your certifications content here -->
+                    <p>
+                        <a href="https://learn.nvidia.com/certificates?id=u4v4nKH9SvWzbC6oSgxzzw" target="_blank" > Accelerating End-to-End Data Science Workflows (NVIDIA)</a> </p>
+                    </p>
+                      <p>
+                        <a href="https://www.coursera.org/account/accomplishments/records/8GG7FPBHXMXS" target="_blank" > Supervised Machine Learning: Regression and Classification  (DeepLearning.AI)</a> </p>
+                      </p>
+                      <p>
+                        <a href="https://www.freecodecamp.org/certification/ManojBusam/machine-learning-with-python-v7" target="_blank" > Machine Learning with Python (freecodecamp.org)</a> </p>
+                      </p>
+                      <p>
+                        <a href="https://www.kaggle.com/learn/certification/mjmanoj/intro-to-machine-learning" target="_blank" > Intro to Machine Learning (Kaggle)</a> </p>
+                      </p>
+                      <p>
+                        <a href="https://www.coursera.org/account/accomplishments/certificate/CMPGUWLDHASN" target="_blank" > Advanced Algorithms and Complexity (UC San Deigo) </a> </p>
+                      </p>
+                      <p>
+                        <a href="https://www.coursera.org/account/accomplishments/certificate/LXAFZCY3ZW6B" target="_blank" > Divide and Conquer, Sorting and Searching, and Randomized Algorithms (Stanford) </a> </p>
+                      </p>
+                      <p>
+                        <a href="https://github.com/manojbusam/JavaSE/blob/main/oracle_cert.pdf" target="_blank" > Oracle Certified Associate, Java SE 8 Programmer 1  </a> </p>
+                      </p>
+                    <!-- Add more certification content as needed -->
+                </section>
+                <section id="projects">
+                    <h2>Projects</h2>
+                    <!-- Your projects content here -->
+                    <p>
+                        <a href="https://github.com/manojbusam/Top-Pick-Recommender-system" target="_blank" > 
+
+Recommender system: User-based Top Picks on movies </a> </p>
+                      </p>
+                    <p>
+                        
+                    <p>
+                        <a href="https://github.com/manojbusam/LLM-Chatbot" target="_blank" > 
+LLM : Building Chatbot with prompt engineering using OpenAI chatgpt </a> </p>
+                      </p>
+                    <p>
+                        <a href="https://github.com/manojbusam/Jenkins-DataPipeline" target="_blank" > 
+Reviews Sentiment Jenkins DataPipeline </a> </p>
+                      </p>
+                    <p>
+                        <a href="https://github.com/manojbusam/Recommender-Container" target="_blank" > 
+API Containerization: Movie Recommender System </a> </p>
+                      </p>
+                      <a href="https://github.com/manojbusam/mvc-nginx-integrated-microservices-v1.0" target="_blank" > Nginx : Integrated with Microservice </a> </p>
+                      </p>
+                      <p>
+                        <a href="https://github.com/manojbusam/mvc-kafka-integrated-microservices-v1.0" target="_blank" > Nginx : Integrated with Kafka </a> </p>
+                      </p>
+                    <!-- Add more project content as needed -->
+                </section>
+                <section id="contact">
+                  <h2>Contact Me</h2>
+ 
+                    <p>
+                        Discord: https://discord.com/users/manoj0162  
+                    </p>
+                    <p>
+                        E-Mail: manojbusam@outlook.com    
+                    </p>
+                    
+ 
+              </section>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
